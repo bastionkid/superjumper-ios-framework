@@ -1,0 +1,34 @@
+/*******************************************************************************
+ * Copyright 2011 See AUTHORS file.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.badlogicgames.superjumper.framework
+
+import com.badlogic.gdx.graphics.g2d.TextureRegion
+import com.badlogic.gdx.graphics.g2d.BitmapFont
+import com.badlogic.gdx.Gdx
+
+class Coin(x: Float, y: Float) : GameObject(x, y, COIN_WIDTH, COIN_HEIGHT) {
+    @JvmField
+    var stateTime = 0f
+    fun update(deltaTime: Float) {
+        stateTime += deltaTime
+    }
+
+    companion object {
+        const val COIN_WIDTH = 0.5f
+        const val COIN_HEIGHT = 0.8f
+        const val COIN_SCORE = 10
+    }
+}

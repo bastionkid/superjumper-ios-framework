@@ -1,0 +1,7 @@
+framework module SuperJumperFramework {
+  umbrella header "SuperJumperFramework.h"
+
+  export *
+  module * { export * }
+}
+

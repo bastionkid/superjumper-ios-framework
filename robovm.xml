@@ -21,9 +21,7 @@
     <resources>
         <resource>
             <directory>data</directory>
-            <includes>
-                <include>data/**</include>
-            </includes>
+            <targetPath>../../data</targetPath>
             <skipPngCrush>true</skipPngCrush>
         </resource>
         <!-- Copies the header files in headers/ to a directory named Headers in
@@ -46,18 +44,18 @@
         <pattern>com.badlogicgames.superjumper.framework.**</pattern>
         <pattern>com.badlogic.gdx.**</pattern>
         <pattern>com.badlogic.gdx.scenes.scene2d.ui.*</pattern>
-        <pattern>com.badlogic.gdx.physics.bullet.**</pattern>
-        <pattern>com.android.okhttp.HttpHandler</pattern>
-        <pattern>com.android.okhttp.HttpsHandler</pattern>
-        <pattern>com.android.org.conscrypt.**</pattern>
-        <pattern>com.android.org.bouncycastle.jce.provider.BouncyCastleProvider</pattern>
-        <pattern>com.android.org.bouncycastle.jcajce.provider.keystore.BC$Mappings</pattern>
-        <pattern>com.android.org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi</pattern>
-        <pattern>com.android.org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$Std</pattern>
-        <pattern>com.android.org.bouncycastle.jce.provider.PKIXCertPathValidatorSpi</pattern>
-        <pattern>com.android.org.bouncycastle.crypto.digests.AndroidDigestFactoryOpenSSL</pattern>
-        <pattern>org.apache.harmony.security.provider.cert.DRLCertFactory</pattern>
-        <pattern>org.apache.harmony.security.provider.crypto.CryptoProvider</pattern>
+<!--        <pattern>com.badlogic.gdx.physics.bullet.**</pattern>-->
+<!--        <pattern>com.android.okhttp.HttpHandler</pattern>-->
+<!--        <pattern>com.android.okhttp.HttpsHandler</pattern>-->
+<!--        <pattern>com.android.org.conscrypt.**</pattern>-->
+<!--        <pattern>com.android.org.bouncycastle.jce.provider.BouncyCastleProvider</pattern>-->
+<!--        <pattern>com.android.org.bouncycastle.jcajce.provider.keystore.BC$Mappings</pattern>-->
+<!--        <pattern>com.android.org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi</pattern>-->
+<!--        <pattern>com.android.org.bouncycastle.jcajce.provider.keystore.bc.BcKeyStoreSpi$Std</pattern>-->
+<!--        <pattern>com.android.org.bouncycastle.jce.provider.PKIXCertPathValidatorSpi</pattern>-->
+<!--        <pattern>com.android.org.bouncycastle.crypto.digests.AndroidDigestFactoryOpenSSL</pattern>-->
+<!--        <pattern>org.apache.harmony.security.provider.cert.DRLCertFactory</pattern>-->
+<!--        <pattern>org.apache.harmony.security.provider.crypto.CryptoProvider</pattern>-->
     </forceLinkClasses>
     <frameworks>
         <framework>UIKit</framework>

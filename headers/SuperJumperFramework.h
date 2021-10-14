@@ -9,25 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <UIKit/UIApplication.h>
 
-//
-// SuperJumperFrameworkDemo class with basic API demonstration
-//
-@interface SuperJumperFrameworkDemo
+@interface RoboGameContainer
++(RoboGameContainer*)newInstance:(NSString*)frameworkId classname:(NSString*)classname;
 -(id)init;
--(id)initWithText:(NSString*)text;
-+(void)hello;
--(NSString*)roboVmVersion;
--(void)installSignals:(void(^)(void))installer;
-@end
-
-// IOSGameLauncher class with basic API demonstration
-@interface IOSGameLauncher
-+(IOSGameLauncher*)instance;
--(id)init;
--(BOOL)didFinishLaunching:(UIApplication*)application;
--(void)didBecomeActive:(UIApplication*)application;
--(void)willEnterForeground:(UIApplication*)application;
--(void)willResignActive:(UIApplication*)application;
--(void)willTerminate:(UIApplication*)application;
-+(void)hello;
+-(void)viewWillAppear:(BOOL)animated;
+-(void)viewDidAppear:(BOOL)animated;
+-(void)viewWillDisappear:(BOOL)animated;
+-(void)viewDidDisappear:(BOOL)animated;
 @end
